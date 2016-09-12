@@ -1,0 +1,27 @@
+/*
+* @Author: jad
+* @Date:   2016-09-12 14:11:55
+* @Last Modified by:   jad
+* @Last Modified time: 2016-09-12 14:54:47
+*/
+
+.map {
+	position: absolute !important;
+	bottom: 0;
+	height: 250px;
+	width: 100%
+}
+#challengesMap {
+	width: inherit;
+	height: inherit;
+}
+
+#home .new-challenge-btn{
+	position: absolute;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    background-color: #f0ad4e;
+    color: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26),
+}

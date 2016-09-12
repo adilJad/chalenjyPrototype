@@ -1,0 +1,43 @@
+<ion-view view-title="Your hobbies" id="hobbies">
+<ion-nav-buttons side="secondary">
+	<button class="button button-icon ion-arrow-right-c" ui-sref="app.home"></button>
+</ion-nav-buttons>
+	<ion-content has-subheader="false">
+		<ion-list>
+			<ion-item class="item item-icon-right" ng-click="data.arts = !data.arts">
+				Arts
+				<i class="icon" ng-class="data.arts?'ion-chevron-down':'ion-chevron-right'"></i>
+			</ion-item>
+			<div ng-show="data.arts">
+				<ion-checkbox ng-model="filter.painting">Painting</ion-checkbox>
+				<ion-checkbox ng-model="filter.cg">Computer Graphics</ion-checkbox>
+				<ion-checkbox ng-model="filter.music">Music</ion-checkbox>
+			</div>
+			<ion-item class="item item-icon-right" ng-click="data.gastronomy = !data.gastronomy">
+				<i class="icon ion-chevron-right" ng-class="data.gastronomy?'ion-chevron-down':'ion-chevron-right'"></i>
+				Gastronomy
+			</ion-item>
+			<div ng-show="data.gastronomy">
+				<ion-checkbox ng-model="filter.pastry">Pastry</ion-checkbox>
+				<ion-checkbox ng-model="filter.hr">Home recepies</ion-checkbox>
+			</div>
+			<ion-item class="item item-icon-right" ng-click="data.sport = !data.sport">
+				<i class="icon" ng-class="data.sport?'ion-chevron-down':'ion-chevron-right'"></i>
+				Sport
+			</ion-item>
+			<div ng-show="data.sport">
+				<ion-checkbox ng-model="filter.football">Football</ion-checkbox>
+				<ion-checkbox ng-model="filter.swiming">Swiming</ion-checkbox>
+				<ion-checkbox ng-model="filter.karate">Karate</ion-checkbox>
+			</div>
+			<ion-item class="item item-icon-right">
+				<i class="icon ion-chevron-right"></i>
+				Technologies
+			</ion-item>
+			<ion-item class="item item-icon-right">
+				<i class="icon ion-chevron-right"></i>
+				Travels
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

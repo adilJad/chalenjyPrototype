@@ -1,0 +1,19 @@
+<ion-view view-title="Find friends">
+	<ion-content has-subheader="true">
+		<div class="bar bar-header item-input-inset">
+			<label class="item-input-wrapper">
+				<i class="icon ion-ios-search placeholder-icon"></i>
+				<input type="search" placeholder="Search" ng-model="query">
+			</label>
+			<!-- <button class="button button-clear button-dark">
+				Cancel
+			</button> -->
+		</div>
+		<div class="friends">
+			<div class="friend" ng-repeat="f in friends | filter: query">
+				<img ng-src="../img/{{f.shortname}}_tn.jpg" alt="">
+				<p>{{f.name}}</p>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

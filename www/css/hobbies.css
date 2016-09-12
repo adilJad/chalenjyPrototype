@@ -1,0 +1,15 @@
+/*
+* @Author: jad
+* @Date:   2016-09-10 18:57:15
+* @Last Modified by:   jad
+* @Last Modified time: 2016-09-10 19:07:37
+*/
+
+#hobbies .sub-item{
+	background-color: #dddddd;
+	border-bottom: 0.5px solid;
+}
+
+#hobbies .item-icon-right .icon{
+	font-size: 16px;
+}

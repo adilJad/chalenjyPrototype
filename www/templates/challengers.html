@@ -1,0 +1,16 @@
+<ion-modal-view ng-controller="ChallengersController">
+	<ion-header-bar>
+		<div class="buttons">
+			<button class="button button-clear button-dark" ng-click="hideChallengers()">Close</button>
+		</div>
+		<h2 class="title">Challengers</h2>
+	</ion-header-bar>
+	<ion-content has-subheader="false">
+	<div class="challengers">
+		<div class="challenger-id" ng-repeat="c in challengersList">
+			<img ng-src="{{c.img}}" alt="">
+			<p>{{c.nickname}}</p>
+		</div>
+	</div>
+	</ion-content>
+</ion-modal-view>

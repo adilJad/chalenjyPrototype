@@ -1,0 +1,62 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left" ng-if="showHeaderBtns">
+        </button>
+      </ion-nav-buttons>
+      
+
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <!-- <ion-header-bar class="bar-stable">
+      <h1 class="title">Left</h1>
+    </ion-header-bar> -->
+    <ion-content id="menu-left">
+      <ion-list>
+        <ion-item menu-close ui-sref="app.home">
+          Home
+        </ion-item>
+        <ion-item menu-close ui-sref="app.profile">
+          Profile
+        </ion-item>
+        <ion-item menu-close ui-sref="app.findFriends">
+          Find friends on Chalenjy
+        </ion-item>
+        <ion-item menu-close ui-sref="app.hobbies">
+          My hobbies
+        </ion-item>
+        <ion-item menu-close ui-sref="app.inviteFriends">
+          Invite your friends
+        </ion-item>
+      </ion-list>
+
+      <img src="http://placehold.it/300x150" alt="">
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu side="right">
+    <!-- <ion-header-bar class="bar-assertive">
+      <h1 class="title">Right Menu</h1>
+    </ion-header-bar> -->
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ng-click="login()">
+          Geolocation
+        </ion-item>
+        <ion-item menu-close href="#/app/search">
+          Challenge types
+        </ion-item>
+        <ion-item menu-close href="#/app/browse">
+          Challenge status
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

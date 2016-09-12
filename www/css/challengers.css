@@ -1,0 +1,31 @@
+/*
+* @Author: jad
+* @Date:   2016-09-12 20:06:53
+* @Last Modified by:   jad
+* @Last Modified time: 2016-09-12 21:00:46
+*/
+
+.challenger-id {
+	width: 50vw;
+	height: 50vw;
+	float: right;
+	position: relative;
+}
+
+.challenger-id img{
+    height: 42vw;
+    width: 49.5vw;
+    position: relative;
+    float: left;
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.challenger-id p {
+	font-weight: bold;
+	padding-left: 10%;
+}
+
+.challengers {
+	margin-top: 5%;
+}

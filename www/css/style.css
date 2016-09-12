@@ -1,0 +1,26 @@
+/* Empty. Add your own CSS if you like */
+@import url("login.css");
+@import url("signup.css");
+@import url("hobbies.css");
+@import url("inviteFriends.css");
+@import url("menu.css");
+@import url("home.css");
+@import url("newChallenge.css");
+@import url("challenge.css");
+@import url("challengers.css");
+@import url("findFriends.css");
+@import url("profile.css");
+
+
+
+.bar.bar-stable .title .logo {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -5%;
+}
+
+.bar.bar-stable .title .logo img {
+	vertical-align: middle;
+	margin: auto;
+}
